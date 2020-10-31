@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+body {
+	margin: 0;
+}
+
+div.slideshow {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+td.prev {
+	text-align: left;
+}
+
+td.next {
+	text-align: right;
+}
+</style>
+</head>
+<body>
+	<h1>간단한 이미지 슬라이드</h1>
+	<div class="slideshow">
+		<div class="myslide">
+			<img src="images/slide1_1200x300.jpg" alt="1">
+		</div>
+		<div class="myslide">
+			<img src="images/slide2_1200x300.jpg" alt="1">
+		</div>
+		<div class="myslide">
+			<img src="images/slide3_1200x300.jpg" alt="1">
+		</div>
+
+		<table style="width: 1200px"  border="1">
+			<tr>
+				<td class="prev"><input type="button" value="<< PREV"
+					onclick="plusslide(-1)"></td>
+				<td class="next"><input type="button" value="NEXT>>"
+					onclick="plusslide(1)"></td>
+			</tr>
+		</table>
+	</div>
+	<script src="js/jscript1.js"></script>
+
+</body>
+</html>

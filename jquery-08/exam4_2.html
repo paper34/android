@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>exam 회원가입</title>
+<script>
+	function chk() {
+		i = document.getElementById("id").value;
+		p = document.getElementById("pw").value;
+		pr = document.getElementById("pwr").value;
+		e = document.getElementById("email").value;
+
+		if (i == "") {
+			alert("아이디를 입력하세요");
+		} else if (p != pr) {
+			alert("비밀번호를 확인해주세요");
+		} else if (e == "") {
+			alert("이메일을 입력하세요")
+		} else if (e != "@") {
+			alert("이메일 양식을 확인해주세요")
+		} else {
+			alert("회원가입 완료");
+		}
+	}
+</script>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<p>
+		아이디: <input id="id" type="text" value="" placeholder="아이디">
+	</p>
+	<p>
+		비밀번호: <input id="pw" type="password" value="" placeholder="비밀번호">
+	</p>
+	<p>
+		비밀번호 확인: <input id="pwr" type="password" value=""
+			placeholder="비밀번호 확인">
+	</p>
+	<p>
+		이메일: <input id="email" type="text" value="" placeholder="이메일">
+	</p>
+	<p>
+		<input type="button" value="회원가입" onclick="chk();">
+	</p>
+</body>
+</html>

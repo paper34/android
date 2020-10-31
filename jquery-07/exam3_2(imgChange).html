@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>그림 변경-DOM</title>
+</head>
+<body>
+	<h1>사진변경</h1>
+	<div id="demo">
+		<img id="plane" src="images/1_plane_600x400.jpg" alt="항공기1">
+	</div>
+	<!--onclick 동작함수랑 연결-->
+	<input type="button" value="1번사진" onclick="changeimg1()">
+	<br>
+	<input type="button" value="2번사진" onclick="changeimg2()">
+	<br>
+	<input type="button" value="3번사진" onclick="changeimg3()">
+	<br>
+
+	<script>
+		function changeimg1() { //id값으로 태그 선택
+			imgtag1 = document.getElementById("plane"); //이미지태그 선택
+			imgtag1.src = "images/1_plane_600x400.jpg";
+		}
+		function changeimg2() { //id값으로 태그 선택
+			imgtag1 = document.getElementById("plane"); //이미지태그 선택
+			imgtag1.src = "images/2_plane_600x400.jpg";
+		}
+		function changeimg3() { //id값으로 태그 선택
+			imgtag1 = document.getElementById("plane"); //이미지태그 선택
+			imgtag1.src = "images/3_plane_600x400.jpg";
+		}
+
+		/*
+		강사님 풀이
+		<div id="demo">
+		<img id="plane" src="images/1_plane_600x400.jpg" alt="항공기1">
+		</div>  <!--onclick 동작함수랑 연결-->
+		<input type="button" value="1번사진" onclick="changeimg1(0)"><br> 
+		<input type="button" value="2번사진" onclick="changeimg2(1)"><br>
+		<input type="button" value="3번사진" onclick="changeimg3(2)">
+
+		imgarr=["images/1_plane_600x400.jpg","images/2_plane_600x400.jpg","images/3_plane_600x400.jpg"];
+
+		function changeimg(no){
+		    imgtag =document.getElementById("plane");
+		    imgtag.src = imgarr[no];
+		}
+		 */
+	</script>
+
+</body>
+</html>

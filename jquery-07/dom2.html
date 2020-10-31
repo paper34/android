@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>그림 변경-DOM</title>
+</head>
+<body>
+	<h1>사진변경</h1>
+	<div id="demo">
+		<img id="plane" src="images/1_plane_600x400.jpg" alt="항공기1">
+	</div>
+	<script>
+		function changeimg() { //id값으로 태그 선택
+			imgtag = document.getElementById("plane"); //이미지태그 선택
+			imgtag.src = "images/2_plane_600x400.jpg";
+		}
+		changeimg();
+	</script>
+
+</body>
+</html>

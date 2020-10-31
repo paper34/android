@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+div {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	background-color: blue;
+}
+</style>
+</head>
+<body>
+	<div id="demo">배경색을 변경합니다.</div>
+	<input type="button" value="색변경버튼" onclick="buttPrompt()">
+
+	<script>
+		function buttPrompt() {
+			input = prompt("변경할 배경색 숫자를 입력해주세요! (1)빨강 (2)노랑 (3)보라", "");
+
+			divtag = document.getElementById("demo");
+			if (input == 1) {
+				divtag.style.backgroundColor = "red";
+			} else if (input == 2) {
+				divtag.style.backgroundColor = "yellow";
+			} else if (input == 3) {
+				divtag.style.backgroundColor = "violet";
+			}
+			return divtag.style.backgroundColor;
+		}
+	</script>
+
+
+</body>
+</html>

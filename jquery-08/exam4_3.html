@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>exam 로그인 화면</title>
+<style>
+p {
+	font-weight: bold;
+}
+</style>
+
+</head>
+<body>
+	<h1>임의 코드 체크</h1>
+	<p>
+		임의코드 <span id="code"></span>
+	</p>
+	<p>
+		코드확인 <input type="text" value="" id="codechk">
+	</p>
+	<p>
+		<input type="button" value="코드체크" onclick="chkcode();">
+	</p>
+
+
+	<script>
+		str = "";
+		// 함수, 랜덤한 문자열을 만든다
+		function randomChar() {
+			chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+			i = parseInt(Math.random() * 36); //숫자10+알파벳26=36
+			ch = chars.substring(i, i + 1);
+			//alert(ch);
+			return ch;
+		}
+		for (k = 0; k < 5; k++) {
+			str = str + randomChar();
+		}
+		document.getElementById("code").innerHTML = str;
+
+		function chkcode() {
+			codecheck = document.getElementById("codechk").value;
+			if (codecheck == str) {
+				alert("확인 성공");
+			} else {
+				alert("확인 실패")
+			}
+		}
+	</script>
+
+
+</body>
+</html>

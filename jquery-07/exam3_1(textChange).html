@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>글자를 변경-document 객체</title>
+<style>
+#demo {
+	height: 100px;
+	width: 300px;
+	border: 1px solid green;
+}
+</style>
+</head>
+<body>
+	<h1>글자를 변경해보기</h1>
+	<div id="demo">글자를 변경합니다.</div>
+	<input type="button" value="버튼" onclick="inputfx1()">
+	<!--이벤트-->
+	<input type="button" value="버튼" onclick="inputfx2()">
+	<input type="button" value="버튼" onclick="inputfx3()">
+
+	<script>
+		function inputfx1() {
+			divtag = document.getElementById("demo"); //id값으로 태그 선택
+			divtag.innerHTML = "1번 버튼";
+		}
+		function inputfx2() {
+			divtag = document.getElementById("demo"); //id값으로 태그 선택
+			divtag.innerHTML = "2번 버튼";
+		}
+		function inputfx3() {
+			divtag = document.getElementById("demo"); //id값으로 태그 선택
+			divtag.innerHTML = "3번 버튼";
+		}
+	</script>
+</body>
+</html>

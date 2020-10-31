@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이벤트-on mouse</title>
+<script>
+	function changeImg() {
+		// 방법1 - document.images[0].src="images/tiger.gif";
+		img = document.getElementById("photo");
+		img.src = "images/tiger.gif";
+	}
+
+	function originalImg() {
+		// 방법1 - document.images[0].src="images/bird.gif";
+		img = document.getElementById("photo");
+		img.src = "images/bird.gif";
+	}
+</script>
+</head>
+<body>
+	<h1>마우스 이벤트</h1>
+	<h2>마우스를 사진에 올려보세요</h2>
+	<img id="photo" src="images/bird.gif" alt="" onmouseover="changeImg()"
+		onmouseout="originalImg()">
+</body>
+</html>

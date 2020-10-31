@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>exam 회원가입</title>
+<script>
+	// 1 join() 함수를 버튼 이벤트랑 연결하기
+	// 2 jion() 함수 텍스트창 빈공백을 체크(validation check)
+	// 3 comparepw() 함수 비밀번호 같은지 체크
+	// 4 최종적 회원가입 성공
+
+	function join() {
+		id = document.getElementById("userid").value;
+		if (id == "") {
+			alert("아이디를 입력하시오");
+			return;
+		}
+
+		pw = document.getElementById("userpw").value;
+		if (pw == "") {
+			alert("비밀번호를 입력하시오");
+			return;
+		}
+
+		pwchk = document.getElementById("userpwchk").value;
+
+		if (pw != pwchk) {
+			alert("비밀번호를 확인하시오");
+			return;
+		}
+
+		email = document.getElementById("useremail").value;
+		if (email == "") {
+			alert("이메일을 입력하시오");
+		} else {
+			alert("회원가입 완료");
+		}
+
+	}
+</script>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<p>
+		아이디: <input id="userid" type="text" value="" placeholder="아이디">
+	</p>
+	<p>
+		비밀번호: <input id="userpw" type="password" value="" placeholder="비밀번호">
+	</p>
+	<p>
+		비밀번호 확인: <input id="userpwchk" type="password" value=""
+			placeholder="비밀번호 확인">
+	</p>
+	<p>
+		이메일: <input id="useremail" type="text" value="" placeholder="이메일">
+	</p>
+	<p>
+		<input type="button" value="회원가입" onclick="join();">
+	</p>
+</body>
+</html>
