@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+div.outbox {
+	width: 500px;
+	border: 2px dotted red;
+	overflow: auto; /*부모 요소 밖으로 나왔을경우 사용*/
+}
+
+div.inbox {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 2px;
+	float: left;
+}
+</style>
+
+
+
+</head>
+<body>
+	<h1>초콜렛</h1>
+	<div class="outbox">
+		<div class="inbox">
+			<img src="images/lemon-posset.jpg" alt="레시피1">
+		</div>
+		<div class="inbox">
+			<img src="images/roasted-brussel-sprouts.jpg" alt="레시피2">
+		</div>
+		<div class="inbox">
+			<img src="images/zucchini-cake.jpg" alt="레시피3">
+		</div>
+	</div>
+</body>
+</html>

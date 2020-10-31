@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>테이블-테두리 여백</title>
+<style>
+table {
+	width: 500px;
+	empty-cells: hide; /*hide 빈셀 테두리 숨김
+                                show 기본값*/
+	border-collapse: separate; /*collapse 셀 사이 간격을 없앰
+                                        적용시 border-spacing, empty-cells 무시*/
+	border-spacing: 5px 10px;
+}
+
+th {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+td {
+	border: 1px solid black;
+}
+
+tr.even {
+	background-color: lightgray;
+}
+
+tr:hover {
+	background-color: green;
+	color: white;
+}
+</style>
+</head>
+<body>
+	<h1>테이블 CSS 예제</h1>
+	<table>
+		<tr>
+			<th>제목1</th>
+			<th>제목2</th>
+			<th>제목3</th>
+		</tr>
+		<tr>
+			<td>셀1</td>
+			<td>셀2</td>
+			<td>셀3</td>
+		</tr>
+		<tr class="even">
+			<td>셀21</td>
+			<td>셀22</td>
+			<td></td>
+		</tr>
+	</table>
+
+
+</body>
+</html>

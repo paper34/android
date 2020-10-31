@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>목록-스타일</title>
+<style>
+ol {
+	list-style-type: decimal-leading-zero;
+	/*li태그 X-> ol,ul*/
+	list-style-position: inside; /*inside 들여쓰기
+                                        outside 기본값*/
+}
+
+ul {
+	list-style-image: url("images/star.png");
+}
+
+li {
+	margin: 10px;
+}
+</style>
+</head>
+<body>
+	<h1>도서목록</h1>
+	<ol>
+		<li>자바스크립트</li>
+		<li>제이쿼리</li>
+		<li>자바프로그래밍</li>
+		<li>데이터베이스</li>
+	</ol>
+	<h2>작가소개</h2>
+	<ul>
+		<li>김시인</li>
+		<li>박개발</li>
+		<li>나디자인</li>
+		<li>홍기획</li>
+	</ul>
+
+</body>
+</html>

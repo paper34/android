@@ -1,0 +1,95 @@
+body{
+    background-image: url("../images/dark-wood.jpg");
+    /*../ 상단으로 올라가서 찾음*/
+    margin: 0;
+    color: #666666;
+    line-height: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div.wrapper{
+    width: 940px;
+    margin: 20px auto;
+    border: 2px solid black;
+    background-color: #ffffff;
+}
+header{
+    background-image: url("../images/header.jpg");
+    height: 160px;
+}
+nav, footer{
+    clear: both;
+}
+nav ul a {
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover{
+    color: black;
+}
+h1{
+   text-indent: -999px; /*타이틀 로고 글자 숨기고*/
+   height: 130px;       /*로고 이미지가 보이도록 높이를 설정*/
+   margin: 0px;
+}
+h2{
+    font-weight: lighter;
+    color: black;
+}
+h3{
+    color: red;
+
+}
+/*상단메뉴*/
+nav, footer{
+    height: 30px;
+    background-color: #aeaeae;
+    color: #ffffff;
+}
+nav ul{
+    margin: 0;
+    padding: 5px 0px 5px 30px;
+}
+nav li{
+    display: inline;
+    margin-right: 40px;
+}
+
+section.popular-recipes a{
+    text-decoration: none;
+    color: red;
+    font-size: 15px;
+}
+
+/*중앙컨텐츠
+1차- 메인&사이드 2단으로 분리*/
+section.courses{
+    float: left;
+    width: 658px;
+    border: 1px solid lightgray
+}
+
+aside section a{
+    padding: 5px;
+}
+article{
+    /* border: 1px solid red; */
+    overflow: hidden;
+    width: 100%;
+}
+figure{
+    float: left;   
+    width: 285px;
+    border: 1px solid lightslategray;
+    padding: 6px;
+    margin: 15px;
+}
+aside{
+    width: 230px;
+    float: left;
+    padding-left: 20px;
+}
+aside section a{
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}

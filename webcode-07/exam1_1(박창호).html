@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>간단한 웹사이트(제목+메뉴)</title>
+<style>
+body {
+	background-color: #616161;
+}
+
+div.head {
+	width: 400px;
+	color: white;
+	margin: auto;
+	padding-left: 100px;
+}
+
+p.sow {
+	padding: 5px 100px;
+}
+
+p {
+	font-size: 14px;
+}
+
+div.all {
+	width: 800px;
+	height: 800px;
+	margin: auto;
+}
+
+div.menu {
+	background-color: black;
+	height: 50px;
+	padding-top: 1px;
+}
+
+li {
+	display: inline;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+}
+
+div.notnew {
+	border: 1px solid red;
+	background-color: white;
+	height: 500px;
+	padding: 19px;
+}
+
+h2 {
+	color: gold;
+}
+
+p.day {
+	color: grey;
+	font-size: 13px;
+}
+
+div.not {
+	width: 400px;
+	height: 200px;
+	float: left;
+}
+
+div.immg {
+	width: 180px;
+	height: 160px;
+	float: left;
+	margin-left: 160px;
+}
+
+img {
+	padding-left: 30px;
+	width: 150px;
+}
+
+div.tab {
+	padding-right: 300px;
+	float: left;
+}
+
+table {
+	width: 500px;
+	font-size: 13px;
+}
+
+a.text1:link {
+	color: blue;
+}
+
+th.text1 {
+	text-align: left;
+}
+
+tr.main th {
+	background-color: rgb(164, 201, 224);
+}
+
+th {
+	border-top: 1px solid lightgray;
+}
+</style>
+
+
+</head>
+<body>
+	<div class="head">
+		<h1>웹페이지 개발 연구소</h1>
+		<p class="sow">school of web</p>
+	</div>
+
+
+	<div class="all">
+
+		<div class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">People</a></li>
+				<li><a href="#">Class</a></li>
+				<li><a href="#">Notice</a></li>
+				<li><a href="#">Picture</a></li>
+			</ul>
+		</div>
+		<div class="notnew">
+			<div class="not">
+				<h2>Notice & News</h2>
+				<p class="day">September 26 2015 by admin</p>
+				<p>웹개발자 컴퍼런스를 개최하오니 많은 참여바랍니다.</p>
+			</div>
+			<div class="immg">
+				<p>
+					<img src="images/1_of_clubs.png">
+				</p>
+			</div>
+			<div class="tab">
+				<h2>샘플게시판</h2>
+				<table>
+					<tr class="main">
+						<th>번호</th>
+						<th>제목</th>
+						<th>작성자</th>
+						<th>날짜</th>
+						<th>조회수</th>
+						<th>댓글수</th>
+					</tr>
+					<tr>
+						<th>1</th>
+						<th class="text1"><a class="text1" href="#">컴퍼런스 개최!</a></th>
+						<th>changho</th>
+						<th>2020.08.04</th>
+						<th>101</th>
+						<th>22</th>
+					</tr>
+					<tr>
+						<th>2</th>
+						<th class="text1"><a class="text1" href="#">안녕하세요</a></th>
+						<th>ksad</th>
+						<th>2020.08.04</th>
+						<th>33</th>
+						<th>25</th>
+					</tr>
+					<tr>
+						<th>3</th>
+						<th class="text1"><a class="text1" href="#">참가 ㄱㄱ</a></th>
+						<th>park3736</th>
+						<th>2020.08.05</th>
+						<th>20</th>
+						<th>4</th>
+					</tr>
+					<tr>
+						<th>4</th>
+						<th class="text1"><a class="text1" href="#">안녕하세요!!!!</a></th>
+						<th>pk0305</th>
+						<th>2020.08.05</th>
+						<th>6</th>
+						<th>2</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+
+	</div>
+
+</body>
+</html>

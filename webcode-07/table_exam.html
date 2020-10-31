@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>테이블 css</title>
+<style type="text/css">
+body {
+	font-family: Arial, Verdana, sans-serif;
+	color: #111111;
+}
+
+table {
+	width: 600px; /*<table> 넓이 지정*/
+}
+
+th {
+	border-top: 1px solid #999999;
+	border-bottom: 2px solid black;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 0.1rem;
+}
+
+th, td {
+	padding: 7px 10px 10px 10px;
+}
+
+tr.even {
+	background-color: #3882c7;
+}
+
+tr:hover {
+	background-color: #c3e6e6;
+}
+
+td.money {
+	text-align: right;
+}
+</style>
+</head>
+<body>
+	<h1>초판 경매</h1>
+	<table>
+		<tr>
+			<th>저자(Author)</th>
+			<th>제목(Title)</th>
+			<th class="money">최저 경쟁 가격</th>
+			<th class="money">현재 경매 가격</th>
+		</tr>
+		<tr>
+			<td>E.E. Cummings</td>
+			<td>Tulips & Chimneys</td>
+			<td class="money">$2,000.00</td>
+			<td class="money">$2,642.50</td>
+		</tr>
+		<tr class="even">
+			<!--짝수번째 테이블-->
+			<td>Charles d'Orleans</td>
+			<td>Poemes</td>
+			<td class="money"></td>
+			<td class="money">$5,866.00</td>
+		</tr>
+		<tr>
+			<td>T.S. Eliot</td>
+			<td>Poems 1909 - 1925</td>
+			<td class="money">$1,250.00</td>
+			<td class="money">$8,499.35</td>
+		</tr>
+		<tr class="even">
+			<td>Sylvia Plath</td>
+			<td>The Colossus</td>
+			<td class="money"></td>
+			<td class="money">$1031.72</td>
+		</tr>
+	</table>
+</body>
+</html>
