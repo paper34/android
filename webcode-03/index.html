@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>박스 div 예제</title>
+
+<style>
+body {
+	border: 2px solid red;
+	margin: 10px;
+}
+
+div.main {
+	width: 800px;
+	height: 400px;
+	background-color: lightskyblue;
+	overflow: hidden; /*박스 내용 보이게 스크롤*/
+	border: 1px solid red; /*박스 선*/
+	margin: 40px; /*박스 기준 바깥 여백 margin
+                                안쪽 여백 padding*/
+	padding: 40px;
+}
+
+div.menu {
+	border: 1px solid saddlebrown;
+	margin: 10px;
+	padding: 20px;
+}
+
+h1 {
+	width: 50%;
+	height: 150px;
+	background-color: gray;
+	border: 1px solid blue;
+	padding: 1px;
+}
+
+div.content {
+	border-width: 5px;
+	border-style: dashed;
+	border-color: green;
+}
+</style>
+
+</head>
+<body>
+
+	<div class="main">
+		<h1>
+			<a href="http://naver.com">쇼핑몰로고</a>
+		</h1>
+
+		<div class="content">
+			<p>쇼핑몰에 오신 것을 환영합니다.</p>
+		</div>
+
+		<address>website design</address>
+
+	</div>
+	<div class="menu">메뉴1 | 메뉴2 |</div>
+
+
+</body>
+</html>

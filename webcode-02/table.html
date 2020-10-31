@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>테이블 구조</title>
+<!--tr 행 td 셀 th 머릿말-->
+<!--colspan 열 병합
+        rawspan 행 병합-->
+<!--gocolor 색상-->
+</head>
+<body>
+	<h1>table 태그?</h1>
+	<table border="1" bgcolor="lightgray">
+		<tr>
+			<th>1개셀</th>
+			<th>1개셀</th>
+			<th>1개셀</th>
+			<th>1개셀</th>
+		</tr>
+		<tr bgcolor="brwon">
+			<th>2개셀</th>
+			<td colspan="3">2개셀</td>
+		</tr>
+		<tr>
+			<th>3개셀</th>
+			<td colspan="2" bgcolor="orange">3개셀</td>
+
+			<td rowspan="2">3개셀</td>
+		</tr>
+		<tr>
+			<th>4개셀</th>
+			<td>4개셀</td>
+			<td>4개셀</td>
+
+		</tr>
+	</table>
+</body>
+</html>

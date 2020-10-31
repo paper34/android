@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>회원가입</title>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<p>우리 카페에 오신 것을 환영합니다. 신규회원은 가입바랍니다.</p>
+	<form action="#" method="get">
+		<table border="1" width="500">
+			<tr>
+				<td>회원이름</td>
+				<td><input type="text" name="mname" size="15"></td>
+			</tr>
+			<tr>
+				<td>주민번호</td>
+				<td><input type="text" name="mc" size="8"> <input
+					type="password" name="mc" size="10"></td>
+			</tr>
+			<tr>
+				<td>아이디</td>
+				<td><input type="text" name="mid" size="15"></td>
+			</tr>
+			<tr>
+				<td>패스워드(최대10자리)</td>
+				<td><input type="password" name="mpw" size="15" maxlength="10"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><textarea name="mintro"
+						placeholder="자신을 소개해주세요" id="" cols="30" rows="5"></textarea></td>
+			</tr>
+			<tr>
+				<td>성별</td>
+				<td><input type="radio" name="mgen">남성 <input
+					type="radio" name="mgen">여성</td>
+			</tr>
+			<tr>
+				<td>좋아하는 차</td>
+				<td><input type="checkbox" name="mgen">카페라떼 <input
+					type="checkbox" name="mgen">카페모카 <input type="checkbox"
+					name="mgen">녹차 <input type="checkbox" name="mgen">아이스티
+				</td>
+			</tr>
+			<tr>
+				<td>회원사진(용량3MB이하)</td>
+				<td><input type="file" name="mphoto"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="가입하기"> <input
+					type="reset" value="다시작성"> <input type="button"
+					value="로그인화면"></td>
+			</tr>
+
+
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>css개요-선택자2</title>
+<style>
+/* 범용 - 폰트: arials
+        바디 - 배경색: lightblue
+        div 3개 - 배경색: 각각 다르게
+        h1 로고 글자 - 사이즈 변경, 색: darkgray
+        메뉴에 링크를 넣고 링크 배경색: limegreen
+        클래스 main - 여백 15px
+        */
+* {
+	font-family: arial;
+}
+
+body {
+	background-color: lightblue;
+}
+
+#header {
+	background-color: skyblue;
+}
+
+#body {
+	background-color: navy;
+}
+
+#foot {
+	background-color: royalblue;
+}
+
+h1 {
+	font-size: 50px;
+	color: darkgray;
+}
+
+a {
+	background-color: limegreen;
+}
+
+div.main {
+	padding: 15px;
+}
+</style>
+</head>
+<body>
+	<div class="main">
+		<div id="header">
+			<h1>로고글자</h1>
+			<ul>
+				<li><a href="#">홈</a></li>
+				<li><a href="#">소개</a></li>
+				<li><a href="#">자유게시판</a></li>
+			</ul>
+		</div>
+
+		<div id="body">
+			<img src="images/lemon-posset.jpg" alt=""> <img
+				src="images/roasted-brussel-sprouts.jpg" alt=""> <img
+				src="images/zucchini-cake.jpg" alt="">
+		</div>
+
+		<div id="foot">
+			<address>&copy;my cook site</address>
+		</div>
+
+	</div>
+
+</body>
+</html>

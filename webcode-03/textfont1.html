@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>css개요-텍스트적용</title>
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	/*폰트변경*/
+	font-size: 16px;
+	/*폰트사이즈 변경, 기본 px은 16px
+            em도 사용 16px=1rem*/
+}
+
+#sun {
+	font-weight: bold;
+	font-style: oblique;
+}
+
+#vv {
+	font-weight: bold;
+	font-style: italic; /*기울임*/
+	font-size: 20px;
+}
+
+h2 {
+	text-transform: uppercase; /*대문자, 소문자 등으로 변경*/
+}
+
+a {
+	text-decoration: none; /*밑줄,취소선
+                                    blink - 크롬 사용 X*/
+}
+
+p {
+	line-height: 1.8rem;
+	text-indent: 20px; /*들여쓰기 음수 입력시 화면 밖으로..*/
+}
+
+h1 {
+	line-height: 6rem; /*행과 행사이 간격
+                                 px아닌 em사용, 권장:1.4~1.5em*/
+	letter-spacing: 1.5rem; /*문자간격*/
+	word-spacing: 2rem;
+	background: red;
+} /*단어 간격*/
+p.writer {
+	text-align: right;
+	/*정렬 left,right,center, justify 마지막을 제외하고 양쪽정렬*/
+	color: blue;
+	font-weight: bold;
+}
+
+p.writer::first-letter {
+	font-size: 200%;
+}
+/*태그에 연관된 요소에 적용 가능
+            id 선택자는 적용 안됨*/
+img {
+	vertical-align: middle;
+}
+/*세로정렬(p,h,div 등 텍스트 정렬용도아님)*/
+a:link {
+	color: green;
+}
+
+a:visited {
+	color: red;
+}
+
+a:focus {
+	color: darkslateblue;
+}
+
+p[class] {
+	background-color: darkslateblue;
+}
+</style>
+</head>
+<body>
+	<h1>여러가지 식물들 소개</h1>
+	<p>다양한 식물들을 소개하며 css 스타일을 적용하는 연습</p>
+	<h2>
+		<img src="images/sun.jpg" height="100" width="100">sunflower
+	</h2>
+	<p>
+		대부분의 <span id="sun">문서는</span>다른 문서를 가리키는 수많은 하이퍼링크를 포함하고 있다.<br>
+		사용자는 필요에 따라 다른 문서의 <a href="http://naver.com">목차나 색인을 따로 구축할 수도
+			있다.</a> <br>여러 편집자가 임의로 문서를 만들고 삭제하기 때문에 수동으로 이런 목차나 색인을 유지하는 것은 쉬운
+		일은 아니다. 위키 소프트웨어는 이를 돕기 위해 분류나 태그 기능을 제공한다.
+		<class id="vv">대부분의</class>
+		위키는 현 문서를 가리키는 다른 문서를 찾는 백링크 기능을 제공한다.<br>
+		<class id="vv">위키에서</class>
+		존재하지 않는
+	<p class="dog">문서를 가리키는 링크를</p>
+	만드는 것은 일반적인 일로, 다른 사용자가 자신이 아는 내용을 채울 수 있도록 유도한다.
+	</p>
+	<p class="writer">
+		<a href="http://daum.net">홍길동이 작성함</a>
+	</p>
+
+
+
+
+</body>
+</html>
