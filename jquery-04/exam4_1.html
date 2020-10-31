@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>중첩반복문</title>
+<script>
+	for (r = 5; r > 0; r--) {
+		for (c = 0; c < r; c++) {
+			document.write("★")
+		}
+		document.write("<br>")
+	};
+
+	for (r = 1; r <= 5; r++) {
+		for (c = 1; c < r; c++) {
+			document.write(" ");
+		}
+		for (s = 5; s >= (6 - r); s--) {
+			document.write("★")
+		}
+		document.write("<br>")
+	}
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

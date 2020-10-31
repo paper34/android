@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤 카드 3장</title>
+    <script>
+
+        //1
+       x = parseInt(Math.random()*10) + 1;
+       y = parseInt(Math.random()*10) + 1;
+       z = parseInt(Math.random()*10) + 1;
+        
+        //2
+        while(x==y||y==z||z==x){/*조건식*/
+
+        y = parseInt(Math.random()*10) + 1; /*반복 될 명령문*/
+        z = parseInt(Math.random()*10) + 1; /*반복 될 명령문*/
+        }                                   /*증감식*/
+        //3
+        document.write("<h1>랜덤하게 카드 3장 출력</h1>");/*결과*/
+        document.write("<img src='images/"+x+"_of_clubs.png' alt='' width='200' height='300'>");
+        document.write("<img src='images/"+y+"_of_clubs.png' alt='' width='200' height='300'>");
+        document.write("<img src='images/"+z+"_of_clubs.png' alt='' width='200' height='300'>");
+
+        /* 1. x y z 랜덤값
+        -> 2. xy yz zx 세가지 경우를 비교해서 한가지만 나오도록
+        -> x y z 값을 저장
+        -> 3. 변수명 + "이미지 문자열" --> 이미지 파일 열림*/
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

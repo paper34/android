@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+	function changeT(input) {
+		c = parseFloat(input);
+		rst = c * 9 / 5 + 32;
+		return rst;
+	}
+
+	input = prompt("섭씨 온도를 입력하세요", "");
+	f = changeT(input);
+	document.write("화씨=" + f);
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

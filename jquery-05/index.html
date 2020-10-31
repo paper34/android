@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+	function sqrsum(f, g, h) { //이름(입력값)-함수(블랙박스)
+		r = f * f + g * g + h * h;
+		return r;
+	}
+	function sumsum(a, b) {
+		c = a + b;
+		return c;
+	}
+	x = 10;
+	y = 8;
+	z = 9;
+	result = sqrsum(x, y, z);
+
+	a = 11;
+	b = 9;
+	c = 10;
+	result2 = sqrsum(a, b, c);
+
+	i = 9;
+	j = 7;
+	k = 8;
+	result3 = sqrsum(i, j, k);
+
+	document.write(result + "<br>");
+	document.write(result2 + "<br>");
+	document.write(result3 + "<br>");
+
+	t = 5;
+	u = 10;
+	ttt = sumsum(t, u);
+	document.write(ttt);
+</script>
+</head>
+<body>
+
+</body>
+</html>

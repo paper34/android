@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>비행기 사진 출력</title>
+<script>
+	//배열변수를 사용하여 사진을 출력
+	plane = new Array("<img src='images/1_plane_600x400.jpg'>",
+			"<img src='images/2_plane_600x400.jpg'>",
+			"<img src='images/3_plane_600x400.jpg'>")
+
+	for (i = 0; i < plane.length; i++) {
+		document.write(plane[i]);
+	}
+
+	//강사님 풀이
+	img = new Array(3);
+	img[0] = "images/1_plane_600x400.jpg";
+	img[1] = "images/2_plane_600x400.jpg";
+	img[2] = "images/3_plane_600x400.jpg";
+
+	for (i = 0; i < img.length; i++) {
+		document.write("<img src='"+img[i]+"'>");
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

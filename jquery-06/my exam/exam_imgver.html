@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보</title>
+    <script>
+        
+        
+        function game() {
+            temp=parseInt(Math.random()*3) + 1;
+            if(temp==1){
+                rst="<img src='images/gawi.png' width='30' height='30'>";
+            }else if(temp==2){
+                rst="<img src='images/mook.png' width='30' height='30'>";
+            }else if(temp==3){
+                rst="<img src='images/bo.png' width='30' height='30'>";
+            } return rst;
+        }
+        /*숫자로 가위바위보를 정의하기*/
+        me=prompt("가위(1) 바위(2) 보(3)",""); 
+        temp2=parseInt(me);
+        rstme="";
+        if(me==1){
+                rstme="<img src='images/gawi.png' width='30' height='30'>";
+            }else if(me==2){
+                rstme="<img src='images/mook.png' width='30' height='30'>";
+            }else if(me==3){
+                rstme="<img src='images/bo.png' width='30' height='30'>";
+            };
+        /*출력*/
+        cpu=game();
+        document.write("나="+rstme+"<br>");
+        document.write("컴퓨터="+cpu);
+        document.write("<br>"+"<br>");
+        
+        
+
+
+        /*승패 결과 출력*/
+            
+        if(rstme=="<img src='images/gawi.png' width='30' height='30'>"){
+            if(cpu=="<img src='images/gawi.png' width='30' height='30'>"){
+                document.write("비겼다");
+            }else if(cpu=="<img src='images/mook.png' width='30' height='30'>"){
+                document.write("컴퓨터 승");
+            }else if(cpu=="<img src='images/bo.png' width='30' height='30'>"){
+                document.write("당신의 승");
+            }
+        }
+        if(rstme=="<img src='images/mook.png' width='30' height='30'>"){
+            if(cpu=="<img src='images/gawi.png' width='30' height='30'>"){
+                document.write("당신의 승");
+            }else if(cpu=="<img src='images/mook.png' width='30' height='30'>"){
+                document.write("비겼다");
+            }else if(cpu=="<img src='images/bo.png' width='30' height='30'>"){
+                document.write("컴퓨터 승");
+            }
+        }
+        if(rstme=="<img src='images/bo.png' width='30' height='30'>"){
+            if(cpu=="<img src='images/gawi.png' width='30' height='30'>"){
+                document.write("컴퓨터 승");
+            }else if(cpu=="<img src='images/mook.png' width='30' height='30'>"){
+                document.write("당신의 승");
+            }else if(cpu=="<img src='images/bo.png' width='30' height='30'>"){
+                document.write("비겼다");
+            }
+        }
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

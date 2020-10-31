@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>while문-랜덤 10자</title>
+<script>
+	document.write("<h1>랜덤하게 3장 카드 출력하기</h1>")
+	document.write("<br>");
+
+	i = 1;
+
+	while (i <= 3) {/*조건식*/
+		x = Math.random() * 10 + 1;/*반복 될 명령문*/
+		y = parseInt(x); /*반복 될 명령문*/
+		i++; /*증감식*/
+		document.write(y)
+	}/*결과*/
+</script>
+</head>
+<body>
+
+</body>
+</html>

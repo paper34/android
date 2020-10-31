@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도토리 레벨</title>
+    <script>
+        //prompt( ) 함수로 도토리 갯수 입력받고
+        //100개 이상 'vip level' 출력
+        //100개 미만 50개 이상이면 'basic level' 출력
+        //50개 미만 30개 이상이면 'start level' 출력
+        //나머지는 'no level' 출력
+
+        x = prompt("도토리 갯수를 입력하세요","");
+        
+        if(x>=100){
+            document.write("Vip Level")
+        }
+        else if(x>=50){document.write("Basic Level")}
+        else if(x>=30){document.write("Start Level")}
+        else{document.write("No Level")};
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

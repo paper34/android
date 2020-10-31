@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>연산자 - 이항2</title>
+
+<script>
+	//정수를 입력 받아서
+	//90점 이상 A
+	//80점 이상 B
+	//79점 이하 C
+	input = prompt("자바스크립트 평가 점수는?", "");
+	score = parseInt(input); //문자->숫자
+	grade = "C";
+	if (score >= 80) {
+		grade = "B";
+	} //80점 이상 B
+	if (score >= 90) {
+		grade = "A";
+	} //90점 이상 A
+
+	document.write("<h1>학점은?</h1>" + grade);
+</script>
+</head>
+<body>
+
+</body>
+</html>

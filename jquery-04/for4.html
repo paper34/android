@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>반복문-prompt</title>
+<script>
+	alert("문제: 3개의 숫자를 입력하고 가장 큰 숫자를 출력하시오.");
+	max = 0; //최대 값
+
+	for (i = 1; i <= 3; i++) {
+		x = prompt("정수를 입력하시오.", "");
+
+		if (i == 1) {//1번째만 맥스에 대입
+			max = parseInt(x); //첫 입력이니 첫 입력 값이 max
+
+		} else {
+			if (max < parseInt(x)) {
+				max = parseInt(x);
+			}
+		}
+	}
+	document.write(max + "<br>");
+</script>
+</head>
+<body>
+
+</body>
+</html>

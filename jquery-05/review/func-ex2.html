@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도토리</title>
+
+    <script>
+
+        function dotori(level){
+            if(level>=100){
+                document.write("Vip Level");
+            }else if(level>=50){
+                document.write("Basic Level");
+            }else if(level>=30){
+                document.write("Start Level");
+            }else{
+                document.write("No Level");
+            }
+        }
+        
+        levelInput = prompt("도토리가 몇개 인가요","");
+        dotori(levelInput);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

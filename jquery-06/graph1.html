@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>배열: 그래프</title>
+<script>
+	//1 그래프에 찍을 데이터 필요 plots 배열변수 20,5,8,15,20
+	plots = [ 2, 8, 5, 3, 9 ];
+	a = plots.sort();
+	document.write("도토리 배열 그래프 그리기<br>");
+	//2 plots 각 사람별로 반복문 5명-5번 반복
+	for (i = 0; i < a.length; i++) {
+
+		//반복문에서 또 반복
+		//3 도토리 수 만큼 반복 ★을 출력
+		size = a[i]; //도토리 갯수
+		document.write(i + "번째사람: ");
+		while (size > 0) {
+			document.write("★");
+			size--;
+		}
+		document.write("<br>");
+
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

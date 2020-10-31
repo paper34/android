@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>배열: 그래프</title>
+<script>
+	//0 랜덤값을 생성하는 함수 random()
+	function randnum() {
+		rst = parseInt(Math.random() * 20) + 1;
+		return rst;
+	}
+	//1 랜덤값 1개를 그래프로 출력
+	document.write("랜덤값을 그래프 그리기<br>");
+	// 랜덤값 만큼 반복 ★을 출력
+	rand = randnum();
+	document.write("랜덤값:");
+	while (rand > 0) {
+		document.write("★");
+		rand--;
+	}
+	document.write("<br>");
+</script>
+</head>
+<body>
+
+</body>
+</html>

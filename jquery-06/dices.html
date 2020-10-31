@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>배열생성-주사위3개+몇칸갈래?</title>
+<script>
+	dices = new Array(3);
+
+	for (i = 0; i < dices.length; i++) {
+		rand = parseInt(Math.random() * 6) + 1; //랜덤 정수 외우기!
+		dices[i] = rand;
+		document.write("주사위 숫자=" + dices[i] + "<br>");
+	}
+	sum = 0;
+	for (i = 0; i < dices.length; i++) {
+		sum = sum + dices[i];
+
+	}
+	document.write("주사위 합=" + sum + "칸 이동");
+</script>
+</head>
+<body>
+
+</body>
+</html>

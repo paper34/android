@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+	//prompt 문자를 입력받아서
+	//숫자 0 이 아니면 입력한 문자 출력
+	//숫자 0 이면 종료라고 출력
+
+	x = 1;
+
+	do {
+		input = prompt("문자를 입력하시오", "");
+		x = parseInt(input);
+		document.write(input + "<br>");
+	} while (input != 0);
+	document.write("종료" + "<br>");
+</script>
+</head>
+<body>
+
+</body>
+</html>

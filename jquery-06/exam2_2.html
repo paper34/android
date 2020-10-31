@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>수학점수 3개의 합</title>
+<script>
+	//수학점수 3개를 prompt로 입력받아
+	//math 배열변수에 저장하고 합을 출력
+	//ex)90 100 90 sum=280
+	math = new Array(3);
+
+	for (i = 0; i < math.length; i++) {
+		math[i] = prompt("점수를 입력하세요", "");
+	}
+	for (i = 0; i < math.length; i++) {
+
+		document.write("점수:" + math[i] + "점" + "<br>");
+		x = parseInt(math[0]);
+		y = parseInt(math[1]);
+		z = parseInt(math[2]);
+
+	}
+	document.write("총합:" + (x + y + z) + "점");
+
+	//강사님 풀이
+	/*  math =new array(3)
+	  
+	  for(i=0; i<math.length; i++){
+	      input=prompt("점수입력","");
+	      math[i]=parseInt(input);
+	  }
+
+	  sum=0;
+	  for(i=0; i<math.length; i++){
+	      sum = sum +math[i];
+	  }
+
+	  document.write("총점은:"+sum); */
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>조건문-switch</title>
+<script>
+	input = prompt("학점을 입력하시오", "");
+	sc = "";
+	/*A는 90점이상입니다
+	B는 80점 이상입니다
+	C는 70점 이상입니다
+	나머지는 D*/
+	switch (input) {
+	case "A":
+		sc = "90점 이상 입니다.";
+		break;
+	case "B":
+		sc = "80점 이상 입니다.";
+		break;
+	case "C":
+		sc = "70점 이상 입니다."
+		break;
+
+	default:
+		sc = "60점 이상 입니다.";
+	}
+	document.write(sc);
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

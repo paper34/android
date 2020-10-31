@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>반복문-for(랜덤)</title>
+<script>
+	for (i = 1; i <= 10; i++) {
+		x = Math.random() * 10 + 1;//*10은 0~9 까지
+		//*10+1은 0~10까지
+		y = parseInt(x);
+		//math random은 소수점까지 나오므로 parseInt로 "실수->정수 변환"
+
+		document.write(y + "<br>");
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>
