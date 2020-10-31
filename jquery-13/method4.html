@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<p id="p1">안녕하세요 제이쿼리 dom테스트입니다</p>
+	<p id="p2">
+		<button>글자추가_append</button>
+	</p>
+	<p id="p3">
+		<button>글자추가_prepend</button>
+	</p>
+	<script>
+		$(document).ready(function() { /*==$(function(){}); */
+			//$('body').css('background-color','red');
+			$('#p2').click(function() {
+				$('#p1').append('뒤로 글자추가');
+			});
+			$('#p3').click(function() {
+				$('#p1').prepend('앞으로 글자추가');
+			});
+
+		})
+	</script>
+</body>
+</html>

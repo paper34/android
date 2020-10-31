@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="js/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+	<h2>이미지 변경</h2>
+	<img src="images/1_content_400x200.jpg">
+
+	<script>
+		//반복할 이미지 이름을 배열로 선언
+		imgurl = [ "images/1_content_400x200.jpg",
+				"images/2_content_400x200.jpg", "images/3_content_400x200.jpg" ]
+
+		indexImg = 1; //이미지 순서 번호
+
+		$(document).ready(function() { //웹페이지 초기 로딩 함수
+			setInterval(imgchg, 1000); //시간마다 반복시키는 함수
+		});
+
+		function imgchg() { //이미지 변경 함수
+			indexImg++;
+			if (indexImg > 3)
+				indexImg = 1;
+			$('img').attr('src', imgurl[indexImg - 1]);
+		}
+	</script>
+</body>
+</html>

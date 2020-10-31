@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="js/jquery-3.5.1.min.js"></script>
+<style>
+span {
+	border: 1px solid green;
+}
+</style>
+</head>
+<body>
+	<h2>이벤트 onoff 메소드</h2>
+	<p>제이쿼리 반가워요</p>
+	<span id='hh'>클릭</span>
+	<span id="ss">클릭</span>
+	<script>
+		$(document).ready(function() {
+			$('#hh').bind('click', function() {
+				$('h2').hide();
+			});
+
+			$('#ss').bind('click', function() {
+				$('h2').show();
+			});
+
+		});
+	</script>
+</body>
+</html>

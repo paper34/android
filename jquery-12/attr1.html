@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="js/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+	<input type="text" value="" placeholder="아이디">
+	<br>
+	<input type="password" value="" placeholder="비밀번호">
+	<br>
+	<input type="radio" value="" placeholder="전공">
+	<br>
+	<input type="checkbox" value="" placeholder="취미">
+	<br>
+	<input type="file" value="" placeholder="사진">
+
+	<script>
+		$(document).ready(function() {
+			$('input[type=text]').css('background-color', 'green');
+			$('input[type=file]').css('color', 'blue');
+
+			$('input[type^=p]').css('background-color', 'yellow');
+		});
+	</script>
+</body>
+</html>

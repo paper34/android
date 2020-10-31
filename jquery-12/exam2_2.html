@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<div>
+		<span><a href="http://jquery.com">jquery.com</a></span> <br /> <a
+			href="mailto:nailoc23@gamil.com">학원선생님 메일주소</a>
+		<p>
+			<input type="button" value="클릭" /> <input type="checkbox" /> <input
+				type="radio" />
+		</p>
+
+		<div id="book">디지털 웹디자인</div>
+		<br /> <b>웹표준</b> <span>HTML&CSS</span><br /> <b>HTML5</b> <span>반응형
+			웹</span><br /> <b>자바스크립트</b> <span>제이쿼리</span>
+
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			$("a[href^='mailto:']").css('background-color', 'lightblue');
+			$("input[type='button']").css('background-color', 'yellow');
+			$("div[id='book']").css('border', '2px solid blue');
+			$('b').css('background-color', 'gray');
+
+		});
+	</script>
+</body>
+</html>

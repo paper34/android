@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<h1>이벤트 메소드 mouseover & mouseout</h1>
+	<h2>마우스를 사진에 올려보소</h2>
+	<img id="bird" src="images/bird.gif" alt="">
+	<script>
+		$(document).ready(function() { /*==$(function(){}); */
+			$('#bird').mouseover(function() {
+				$('#bird').attr('src', 'images/tiger.gif');
+				//이미지태그를 넣어도 되지만 자기 자신이니
+				//'#bird' 대신 this 사용가능
+			});
+			$('#bird').mouseout(function() {
+				$('#bird').attr('src', 'images/bird.gif');
+			});
+
+			//hover를 사용해서 mouseover out 모두 표현 가능
+			/*  $('#bird').hover(function(){
+			   $('#bird').attr('src','images/tiger.gif');
+			  }, function(){
+			   $('#bird').attr('src','images/bird.gif');*/
+
+		});
+	</script>
+</body>
+</html>

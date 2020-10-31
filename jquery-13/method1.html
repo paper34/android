@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="js/jquery-3.5.1.min.js"></script>
+<style>
+div {
+	border: 1px solid red;
+}
+</style>
+</head>
+<body>
+	<div id="source">안녕하세요 제이쿼리~</div>
+	<div id="destinate">여기로 글자 넣기</div>
+	<script>
+		$(document).ready(function() { /*==$(function(){}); */
+			//$('body').css('background-color','red');
+			text = $('#source').text();
+			$('#destinate').text(text);
+		})
+	</script>
+</body>
+</html>

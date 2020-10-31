@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="js/jquery-3.5.1.min.js"></script>
+<style>
+.reverse {
+	background-color: limegreen;
+}
+</style>
+
+</head>
+<body>
+	<h2 id="h1">헬로우 제이쿼리</h2>
+	<h2 id="h2">헬로우 제이쿼리</h2>
+	<h2 id="h3">헬로우 제이쿼리</h2>
+	<h2 id="h4">헬로우 제이쿼리</h2>
+
+	<script>
+		$(document).ready(function() { /*==$(function(){}); */
+			//선택자.이벤트함수(사용자지정합수(){});
+			$('h2').mouseover(function() {
+				$(this).addClass('reverse');
+			});
+			$('h2').mouseout(function() {
+				$(this).removeClass('reverse');
+			});
+
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<h1>이미지 바꾸기 버튼</h1>
+	<img id="img1" src="images/1_content_400x200.jpg" alt="">
+	<br>
+	<button id="button1">버튼1</button>
+	<button id="button2">버튼2</button>
+	<button id="button3">버튼3</button>
+	<script>
+		$(document).ready(function() { /*==$(function(){}); */
+			$('#button1').click(function() {
+				$('#img1').attr('src', 'images/1_content_400x200.jpg');
+			});
+			$('#button2').click(function() {
+				$('#img1').attr('src', 'images/2_content_400x200.jpg');
+			});
+			$('#button3').click(function() {
+				$('#img1').attr('src', 'images/3_content_400x200.jpg');
+			});
+		});
+	</script>
+</body>
+</html>

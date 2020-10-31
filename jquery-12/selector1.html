@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="js/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+	<div>큰박스</div>
+	<span>작은박스</span>
+	<p>텍스트샘플
+	<blockquote>유명한글</blockquote>
+	</p>
+	<script>
+		$(document).ready(function() {
+			$('span').css('color', 'green');
+			$('blockquote').css('background', 'orange');
+			$('p').css('color', 'blue');
+		});
+	</script>
+</body>
+</html>

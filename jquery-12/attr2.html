@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="js/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+	<!--이미지 출력-->
+	<h2>5초 후 이미지 변경</h2>
+	<img src="images/1_content_400x200.jpg">
+	<script>
+		$(document).ready(function() {
+			//setTimeout() 사용해서 imgchg()호출
+			setTimeout(imgchg, 5000);
+			//이미지 변경하는 함수를 구현
+
+		});
+		function imgchg() {
+			$('img').attr('src', 'images/2_content_400x200.jpg');
+		};
+	</script>
+</body>
+</html>

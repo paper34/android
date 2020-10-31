@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>단락 글자 변경</title>
+<script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<h1>버튼을 클릭하면 아래 글자가 변경됩니다</h1>
+	<p>Hello Javascript & jQuery 웹 프로그래밍</p>
+	<p>Hello CSS 웹 디자인</p>
+	<h2>버튼2를 클릭하면 글자가 사라집니다</h2>
+	<button id="btn1">클릭하시오</button>
+	<button id="btn2">버튼2 클릭</button>
+	<button id="btn3">원래대로</button>
+
+
+	<script>
+		$(document).ready(function() {
+
+			$("#btn1").click(function() {
+				$("p").text("웹개발을 마스터합니다");//글자 변경 
+			});
+		});
+
+		$("#btn2").click(function() {
+			$("h2").hide(); // hide() 반대 show()
+		});
+
+		$("#btn3").click(function() {
+			$("h2").show();
+		});
+	</script>
+
+
+</body>
+</html>

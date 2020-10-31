@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!--jquery.com 에 접속해서 lirary 다운로드 후 저장-->
+<script src="js/jquery-3.5.1.min.js">
+	
+</script>
+</head>
+<body>
+	<h1 id="title">제이쿼리 프로그래밍 연습</h1>
+
+	<script>
+		//자바스크립트 라이브러리 공부
+		$(document).ready(function() { //$ = jQuery 라는 뜻
+			//test = $("#title").text();
+			//alert(test);
+		});
+
+		//자바스크립트 low level
+		window.onload = function() {
+			test = document.getElementById("title").innerHTML;
+			alert(test);
+		}
+	</script>
+</body>
+</html>
