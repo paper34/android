@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>연산자-단항</title>
+<script>
+	var x = 10;
+	var y = 20;
+	//x++;//단항++ ->1증가
+	//y++;
+	document.write(x++);
+	document.write("<br>");
+	document.write(x);
+	document.write("<br>");
+	document.write(++y);
+	document.write("<br>");
+	document.write(y);
+	//뒤에 붙어 있는 증감연산자는 나중에 계산
+	//앞에 붙어 있으면 먼저 계산
+
+	var a = 9;
+	var b = 7;
+	var c = 5;
+	var d = a++ + --c + ++b;
+	//d = 21 //연산자 앞뒤 여부에 따라 a=9 c=4 b=8
+	alert(d);
+</script>
+</head>
+<body>
+
+</body>
+</html>
