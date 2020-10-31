@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<style>
+p {
+	width: 300px;
+	padding: 25px;
+	background-color: lightgreen;
+	color: white;
+	text-align: center;
+}
+
+p:hover {
+	background-color: cadetblue;
+}
+
+p.rou1 {
+	border: 3px dotted blue;
+	border-radius: 40px;
+}
+
+p.rou2 {
+	border-radius: 10px 20px 30px 40px;
+}
+
+p.rou3 {
+	border-radius: 20px 40px 20px 40px; /*== 20px 40px;*/
+	/*좌측상=우측하//우측상=좌측하*/
+}
+
+p.rou4 {
+	border: 3px solid violet;
+}
+</style>
+<body>
+	<h2>둥근모서리 박스 예제</h2>
+	<hr>
+	<p class="rou1">둥근박스1</p>
+	<p class="rou2">둥근박스2</p>
+	<p class="rou3">둥근박스3</p>
+	<p class="rou4">둥근박스4</p>
+	<p class="rou5">둥근박스5</p>
+
+
+</body>
+</html>

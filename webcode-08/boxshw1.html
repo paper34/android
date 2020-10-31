@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>box-shadow</title>
+<style>
+div {
+	border: 10px solid gray;
+	width: 330px;
+	margin: 30px;
+}
+
+div.red { /*box-shadow: 우 밑 블러 색상*/
+	box-shadow: 5px 5px red;
+}
+
+div.blur {
+	box-shadow: 10px 10px 10px blue;
+}
+
+div.multi {
+	box-shadow: 20px 20px 5px black, -10px -10px 25px gray;
+	/*다중 그림자 
+                        box-shadow: 우 밑 블러 색상, (콤파 필수)
+                                    우 밑 블러 색상*/
+}
+</style>
+</head>
+<body>
+	<div class="red">
+		<img src="images/spongebob.jpg" alt="" width="300" height="200">
+	</div>
+	<br>
+	<div class="blur">
+		<img src="images/spongebob.jpg" alt="" width="300" height="200">
+	</div>
+	<br>
+	<div class="multi">
+		<img src="images/spongebob.jpg" alt="" width="300" height="200">
+	</div>
+
+</body>
+</html>

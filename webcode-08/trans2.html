@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+div.box {
+	width: 150px;
+	height: 150px;
+	margin-top: 20px;
+	background-color: red;
+	transition: width 2s;
+
+	/* background-color 2s; 색변경 */
+}
+
+div.box:hover {
+	/* background-color: green; 변경할 색 */
+	width: 400px;
+}
+</style>
+</head>
+<body>
+	<h2>마우스를 대면 색이 변경됩니다</h2>
+	<hr>
+	<div class="box"></div>
+</body>
+</html>
